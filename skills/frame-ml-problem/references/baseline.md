@@ -11,13 +11,12 @@ list of the tokens below, for example `seasonal_naive, dummy`.
   same month last year for monthly revenue. Where there is no
   seasonal cycle, the note names the last observed value instead
   (a persistence forecast) — a stock's most recent close, a
-  sensor's last reading
-- `group_mean` — predict the mean of a column that is known at
-  prediction time: an item's average rating across other users (the
-  classic collaborative-filtering baseline), a customer's own past
-  average order value, a zip code's average home price. Do not use
-  the generalize-to column: those ids are unseen, so their mean
-  does not exist
+  sensor's last reading. This must respect the prediction horizon -- the past
+  values used must not be more recent than what is available at prediction time.
+- `group_mean` — predict the mean of a column that is known at prediction time:
+  an item's average rating across other users, a customer's own past average
+  order value, a zip code's average home price. Do not use the generalize-to
+  column: those ids are unseen, so their mean does not exist
 - `logistic` — a simple model that emits probabilities, fit on one
   or two obviously predictive raw columns (income and existing debt
   for credit risk, tenure alone for churn), when that is the goal
