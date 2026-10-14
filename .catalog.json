@@ -3,7 +3,7 @@
   "repository": "probabl-ai/skills",
   "version": "0.7.0",
   "description": "Skills to support Machine Learning experimentation using the Python ecosystem.",
-  "catalog_hash": "639a9ef530ce015a3745ab9502f103c8e667735cfcaa8d4de21b6b2c164aaeea",
+  "catalog_hash": "a213cb0cdc8ebf7d744d61cd9a118853e2b60580c9d39d7bc550d64be6f93a95",
   "skills": [
     {
       "id": "explore-ml-data",
@@ -12,7 +12,7 @@
       "summary": "Explore the dataset before designing any model.",
       "category": "methodology",
       "subcategory": null,
-      "hash": "2ad59a8207b132ba89a40c310f70849c6040d7e2eba024a8ca390355ed900487"
+      "hash": "476943a6b4497fb35b3d634460cdfadf00e85ea8d3291d05c194112a48771a0c"
     },
     {
       "id": "frame-ml-problem",
@@ -183,7 +183,7 @@
       "summary": "Pick pandas, seaborn, plotly, or matplotlib before writing figure code.",
       "category": "action",
       "subcategory": null,
-      "hash": "0f7375d919b742a636d9a801a965c5489cb136167c40e4a662842524eb9947e6"
+      "hash": "c2524fabe423cad2b236c7685ac59b926564839ce8a555f835a37e46f2f424b8"
     },
     {
       "id": "research-ml-practice",
