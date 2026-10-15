@@ -2,7 +2,7 @@
   "name": "probabl-skills",
   "repository": "probabl-ai/skore-skills",
   "description": "Skills to support Machine Learning experimentation using the Python ecosystem.",
-  "catalog_hash": "54220626fc87e8466edae45496a1e8eda2fe5c04e70a6ec2bf1948ea4609b189",
+  "catalog_hash": "ed55c282855de26ec7d17f6f79e318452c26265013c6f233efa5892bdc8786f3",
   "skills": [
     {
       "id": "explore-ml-data",
@@ -29,7 +29,7 @@
       "summary": "Declare a skrub DataOps graph from the data source to the predictor after framing is locked.",
       "category": "methodology",
       "subcategory": null,
-      "hash": "d0c3069271f6d96a469f659d1ebc12700972d312c5aeb9a3d065d1a9b13fa4c9"
+      "hash": "1dbbcd550ce162d67dd19804fc0f2a2ab6d57cfb907da91168c3ddb6fe6139f2"
     },
     {
       "id": "evaluate-ml-pipeline",

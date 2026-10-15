@@ -16,7 +16,7 @@
         "The response does NOT: Write `from sklearn.pipeline import Pipeline` as a live import in `pipeline.py`.",
         "The response does NOT: Return a `Pipeline([(\"scaler\", StandardScaler()), ...])` object from `build_learner` / `build_pipeline`. A docstring that only names the forbidden equivalent is not a violation.",
         "The response does NOT: Use `skrub.X(...)` / `skrub.y(...)` as graph roots.",
-        "The response does NOT: Call `skb.report(...)` or `full_report` without `eval=False` (that fits). The Method snapshot is `pipeline.svg` from `learner.data_op.skb.draw_graph().svg` and `learner.data_op.skb.report(eval=False, open=False, overwrite=True, output_dir=...)`."
+        "The response does NOT: Call `DatOp.skb.report(...)` or `DataOp.skb.full_report` without `eval=False` or `SkrubLearner.report` (that fits). The Method snapshot is `pipeline.svg` from `learner.data_op.skb.draw_graph().svg` and `learner.data_op.skb.report(eval=False, open=False, overwrite=True, output_dir=...)`."
       ],
       "tools": false,
       "sandbox": [],
