@@ -1,7 +1,7 @@
 # Unfitted snapshot
 
 After `build_learner` exists and before `smoke run`. No fit, no
-`.skb.eval`. Do not call `full_report`. Do not call `skb.report`
+`.skb.eval`. Do not call `.skb.full_report`. Do not call `.skb.report`
 without `eval=False`.
 
 A `SkrubLearner` wraps its DataOp in `learner.data_op`. The

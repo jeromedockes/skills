@@ -54,7 +54,8 @@ violated.
   from `build_learner` / `build_pipeline`. A docstring that only
   names the forbidden equivalent is not a violation.
 - Use `skrub.X(...)` / `skrub.y(...)` as graph roots.
-- Call `skb.report(...)` or `full_report` without `eval=False`
+- Call `DatOp.skb.report(...)` or `DataOp.skb.full_report` without `eval=False`
+  or `SkrubLearner.report`
   (that fits). The Method snapshot is `pipeline.svg` from
   `learner.data_op.skb.draw_graph().svg` and
   `learner.data_op.skb.report(eval=False, open=False, overwrite=True, output_dir=...)`.
