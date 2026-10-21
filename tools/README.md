@@ -39,8 +39,10 @@ give a stable fingerprint of the whole catalog.
 
 The hash for a skill covers every file under its `path` directory
 recursively, excluding `.DS_Store`, `__pycache__/`, `.pytest_cache/`,
-`.mypy_cache/`, and `*.pyc` / `*.pyo` files. File paths are normalised
-to POSIX so digests are stable across operating systems.
+`.mypy_cache/`, `*.pyc` / `*.pyo` files, and the `evals/` directory
+(development-only fixtures; see [`.gitattributes`](../.gitattributes)).
+File paths are normalised to POSIX so digests are stable across
+operating systems.
 
 ## validate_catalog.py
 
@@ -66,6 +68,10 @@ Checks these invariants:
    apply. Loads are `load` / `route to` / `re-enter` / `hand off to`
    instructions; `return to` and prohibitions are not. The entry skill
    is exempt.
+9. Every catalog skill has one README row under "Skills in detail",
+   and that cell equals the catalog `summary`.
+10. Every folded `SKILL.md` description starts with that summary.
+    Later sentences may follow.
 
 Run directly with `python tools/validate_catalog.py` or via
 `pixi run validate`.
